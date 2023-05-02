@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller">
+   <center>
+      <SplitPane dividerPositions="0.5" prefHeight="146.0" prefWidth="140.0">
+         <items>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+               
+                      <Label fx:id="text1" prefHeight="18.0" prefWidth="214.0" text="кількість кроків табуляції=">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin></Label>
+                  <Label fx:id="text2" prefHeight="18.0" prefWidth="183.0" text="максимальне значення=">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </VBox.margin></Label>
+                  <Label fx:id="text3" prefHeight="18.0" prefWidth="182.0" text="мінімальне значення=">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="text4" prefHeight="18.0" prefWidth="137.0" text="сума елементів=">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="text5" prefHeight="18.0" prefWidth="165.0" text="середнє арифметичне=">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="154.0" prefWidth="88.0">
+               <children>
+                   <Button onAction="#onCountButtonClick" text=" обчислити кількість">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onMaxButtonClick" text="обчилити найбільше значення функції">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onMinButtonClick" text="Обчислити найменше значення функції">
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onSumButtonClick" text="сума елементів масиву значень функції">
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onAverageButtonClick" text="середнє арифметичне">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </items>
+      </SplitPane>
+   </center>
+   <top>
+      <HBox prefHeight="80.0" prefWidth="698.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="begin" promptText="enter a">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="end" promptText="enter b">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="step" promptText="enter h">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="bField" promptText="enter b1">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></TextField>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </top>
+</BorderPane>
